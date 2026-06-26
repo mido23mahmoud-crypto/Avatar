@@ -1,0 +1,296 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(2,15,40,.70),
+    rgba(2,10,30,.75)),
+    url("avatar.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+
+    width:100%;
+
+    padding:20px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+flex-direction: row-reverse;
+
+position:absolute;
+top:0;
+left:0;
+z-index:100;
+}
+/* ===========================
+   Logo
+=========================== */
+
+.logo{
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.logo:hover{
+
+    color:#5fd6ff;
+
+    transform:scale(1.1);
+
+}
+
+
+/* ===========================
+   Navbar
+=========================== */
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#eafcff;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    transition:.4s;
+
+}
+
+nav a:hover{
+
+    color:#5fd6ff;
+
+    transform:scale(1.15);
+
+    text-shadow:0 0 12px #5fd6ff;
+
+}
+
+nav a:active{
+
+    color:#00cfff;
+
+}
+
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 8%;
+
+}
+
+.content{
+
+    max-width:600px;
+
+}
+
+.content h1{
+
+    color:white;
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.content p{
+
+    color:#d9ecff;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+
+/* ===========================
+   Button
+=========================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#0f4c81;
+
+    border:2px solid #5fd6ff;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:#5fd6ff;
+
+    color:#02142d;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px #5fd6ff;
+
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.hero{
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.content h1{
+
+    font-size:48px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.logo{
+
+    font-size:28px;
+
+}
+
+nav{
+
+    gap:15px;
+
+}
+
+nav a{
+
+    font-size:15px;
+
+}
+
+.content h1{
+
+    font-size:36px;
+
+}
+
+.content p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    padding:12px 28px;
+
+}
+
+}
